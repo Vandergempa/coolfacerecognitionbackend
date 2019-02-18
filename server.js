@@ -9,13 +9,21 @@ const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
+// const db = knex({
+//   client: 'pg',
+//   connection: {
+//     host : 'postgresql-fitted-87659', //equals to localhost
+//     user : 'postgres',
+//     password : 'ezmegaz123',
+//     database : 'smart-brain'
+//   }
+// });
+
 const db = knex({
   client: 'pg',
   connection: {
-    host : 'postgresql-fitted-87659', //equals to localhost
-    user : 'postgres',
-    password : 'ezmegaz123',
-    database : 'smart-brain'
+    host: process.env.DATABASE_URL,
+    ssl: true,
   }
 });
 
