@@ -12,7 +12,7 @@
     "nodemon": "^1.18.9"
   },
   "dependencies": {
-    "bcrypt": "^3.0.4",
+    "bcrypt": "^5.0.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
     "clarifai": "^2.9.0",
